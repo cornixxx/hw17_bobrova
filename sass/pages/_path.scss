@@ -1,0 +1,31 @@
+.path {
+  padding: 0 0 50px;
+}
+
+.path h2+p {
+  margin-bottom: 50px;
+}
+
+.path .button-wrap {
+  width: 300px;
+  margin: 0 auto;
+}
+
+@include respond-to(medium-screens) {
+  .path .button-wrap {
+    width: 450px;
+  }
+}
+
+@include respond-to(large-screens) {
+  .path .button-wrap {
+    width: 550px;
+  }
+}
+
+@include respond-to(wide-screens) {
+  .path .button-wrap {
+    width: 575px;
+    margin-top: 80px;
+  }
+}

@@ -1,0 +1,16 @@
+.navbar-toggle span{
+  background: $main-color;
+}
+
+.navbar-nav li {
+  a {
+    font-size: 1.1em;
+    color: $main-color;
+
+    &:hover {
+      color: $second-color;
+      background: none;
+    }
+  }
+}
+

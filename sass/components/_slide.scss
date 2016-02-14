@@ -1,0 +1,99 @@
+.flex-control-paging {
+  bottom: -55px;
+}
+.flex-control-paging li {
+  margin: 0 1px 0 1px;
+  padding: 0;
+}
+
+ .flex-control-paging li a{
+  text-indent: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 0;
+  color: $main-font-color;
+  background: #2e2e2e;
+  font-size: 18px;
+  padding-top: 5px;
+}
+
+.flex-control-paging li a.flex-active {
+  color: $second-color;
+  background: #2e2e2e;
+}
+.flex-direction-nav a.flex-next,
+.flex-direction-nav a.flex-prev {
+  top: 100%;
+  height: 22px;
+  overflow: hidden;
+  margin-top: 25px;
+
+  &::before {
+    color: $second-color;
+    font-size: 24px;
+    font-family: fontello;
+  }
+}
+
+.flex-direction-nav a.flex-next:before {
+  content: '\e80f';
+}
+
+.flex-direction-nav a.flex-prev:before {
+  content: '\e80e';
+}
+
+
+@include respond-to(medium-screens) {
+  .flex-control-paging {
+    bottom: -75px;
+  }
+
+  .flex-direction-nav a.flex-next,
+  .flex-direction-nav a.flex-prev {
+    margin-top: 45px;
+  }
+
+  .flex-direction-nav a.flex-next {
+    margin-right: 180px;
+  }
+  .flex-direction-nav a.flex-prev {
+    margin-left: 180px;
+  }
+}
+
+@include respond-to(large-screens) {
+  .flex-control-paging {
+    bottom: -115px;
+  }
+
+  .flex-direction-nav a.flex-next,
+  .flex-direction-nav a.flex-prev {
+    margin-top: 85px;
+  }
+
+  .flex-direction-nav a.flex-next {
+    margin-right: 370px;
+  }
+  .flex-direction-nav a.flex-prev {
+    margin-left: 370px;
+  }
+}
+
+@include respond-to(wide-screens) {
+  .flex-control-paging {
+    bottom: -115px;
+  }
+
+  .flex-direction-nav a.flex-next,
+  .flex-direction-nav a.flex-prev {
+    margin-top: 85px;
+  }
+
+  .flex-direction-nav a.flex-next {
+    margin-right: 400px;
+  }
+  .flex-direction-nav a.flex-prev {
+    margin-left: 400px;
+  }
+}

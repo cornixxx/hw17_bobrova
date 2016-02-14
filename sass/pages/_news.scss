@@ -1,0 +1,52 @@
+.news {
+  padding: 50px 0;
+}
+
+.news .flexslider {
+  background: none;
+  border: none;
+}
+
+.flexslider li a{
+  h3 {
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: $main-color;
+    text-transform: uppercase;
+    margin: 30px 0 15px;
+  }
+
+  p {
+    font-size: 1em;
+    color: $main-font-color;
+  }
+
+  &:hover {
+
+    h3{
+      color: $second-color;
+    }
+  }
+
+}
+
+@include respond-to(medium-screens) {
+  .news {
+    padding: 50px 0 100px;
+  }
+
+}
+
+@include respond-to(large-screens) {
+  .news {
+    padding: 50px 0 170px;
+  }
+
+}
+
+@include respond-to(wide-screens) {
+  .news {
+    padding: 50px 0 200px;
+  }
+}

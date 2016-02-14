@@ -1,0 +1,112 @@
+.opinions {
+  padding: 40px 0;
+}
+.cites-item {
+  margin-bottom: 35px;
+
+  img {
+    float: left;
+    clear: left;
+    margin-right: 40px;
+    width: 30%;
+    max-width: 132px;
+  }
+  blockquote {
+    color: $main-font-color;
+    font-size: 1em;
+    font-style: italic;
+    margin-top: 10px;
+    letter-spacing: 0.14em;
+    line-height: 1.778;
+    border: none;
+  }
+
+  p {
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-top: 20px;
+    overflow: hidden;
+
+    span {
+      color: $main-color;
+      font-weight: 700;
+    }
+  }
+}
+
+@include respond-to(medium-screens) {
+  .cites {
+    margin-top: 85px;
+
+    .cites-item{
+      width: 50%;
+      float: left;
+      padding-right: 25px;
+      margin-bottom: 70px;
+
+      &:nth-child(2n){
+        padding: 0 0 0 40px;
+      }
+
+      &:nth-child(2n-1){
+        clear: left;
+      }
+
+
+    }
+  }
+
+}
+
+@include respond-to(large-screens) {
+  .cites {
+    margin-top: 85px;
+
+    .cites-item{
+      width: 50%;
+      float: left;
+      padding-right: 80px;
+      margin-bottom: 70px;
+
+      &:nth-child(2n){
+        padding: 0 0 0 40px;
+      }
+
+      &:nth-child(2n-1){
+        clear: left;
+      }
+
+      img {
+        width: auto;
+      }
+    }
+  }
+}
+
+@include respond-to(wide-screens) {
+  .opinions {
+    padding: 100px 0 135px;
+  }
+  .cites {
+    margin-top: 85px;
+
+    .cites-item{
+      width: 50%;
+      float: left;
+      padding-right: 80px;
+      margin-bottom: 70px;
+
+      &:nth-child(2n){
+        padding: 0 0 0 40px;
+      }
+
+      &:nth-child(2n-1){
+        clear: left;
+      }
+
+      img {
+        width: auto;
+      }
+    }
+  }
+}
